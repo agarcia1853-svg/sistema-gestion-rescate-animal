@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Rescate - Refugio Animal</title>
+</head>
+
+<body>
+
+    <!-- Encabezado principal -->
+    <header>
+        <h1>Sistema de Gestión de Casos de Rescate Animal</h1>
+        <p>Refugio Animal - Protección, atención y nuevas oportunidades</p>
+
+        <img
+            src="assets/img/veterinaria.png"
+            alt="Atención veterinaria de un animal rescatado"
+            width="300"
+        >
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+                <a href="reportar.html" aria-current="page">
+                    Reportar rescate
+                </a>
+            </li>
+            <li><a href="rescates.html">Casos de rescate</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+
+        <!-- Presentación de la página -->
+        <section>
+            <h2>Registrar un nuevo rescate</h2>
+
+            <p>
+                Utiliza este formulario para registrar la información
+                de un animal que necesita ayuda. Los datos permitirán
+                identificar el caso y organizar su atención.
+            </p>
+        </section>
+
+        <!-- Sección del formulario -->
+        <section>
+            <h2>Formulario de ingreso del animal</h2>
+
+            <!-- Artículo que agrupa el formulario -->
+            <article>
+                <h3>Información del nuevo rescate</h3>
+
+                <form action="#" method="get">
+
+                    <!-- Información general -->
+                    <fieldset>
+                        <legend>Información del caso</legend>
+
+                        <p>
+                            <label for="titulo">
+                                Nombre provisional o título del caso:
+                            </label>
+
+                            <input
+                                type="text"
+                                id="titulo"
+                                name="titulo"
+                                placeholder="Ejemplo: Perro encontrado en la calle"
+                                required
+                            >
+                        </p>
+
+                        <p>
+                            <label for="especie">
+                                Categoría del animal:
+                            </label>
+
+                            <select id="especie" name="especie" required>
+                                <option value="">
+                                    Seleccione una categoría
+                                </option>
+
+                                <option value="perros">Perros</option>
+                                <option value="gatos">Gatos</option>
+                                <option value="fauna-silvestre">
+                                    Fauna silvestre
+                                </option>
+                            </select>
+                        </p>
+                    </fieldset>
+
+                    <!-- Nivel de urgencia -->
+                    <fieldset>
+                        <legend>Nivel de urgencia</legend>
+
+                        <p>
+                            Seleccione el nivel de urgencia del caso:
+                        </p>
+
+                        <p>
+                            <input
+                                type="radio"
+                                id="urgencia-alta"
+                                name="urgencia"
+                                value="alta"
+                                required
+                            >
+
+                            <label for="urgencia-alta">Alta</label>
+                        </p>
+
+                        <p>
+                            <input
+                                type="radio"
+                                id="urgencia-media"
+                                name="urgencia"
+                                value="media"
+                            >
+
+                            <label for="urgencia-media">Media</label>
+                        </p>
+
+                        <p>
+                            <input
+                                type="radio"
+                                id="urgencia-baja"
+                                name="urgencia"
+                                value="baja"
+                            >
+
+                            <label for="urgencia-baja">Baja</label>
+                        </p>
+                    </fieldset>
+
+                    <!-- Descripción del rescate -->
+                    <fieldset>
+                        <legend>Descripción del rescate</legend>
+
+                        <p>
+                            <label for="descripcion">
+                                Describa el estado del animal y las
+                                circunstancias del rescate:
+                            </label>
+                        </p>
+
+                        <textarea
+                            id="descripcion"
+                            name="descripcion"
+                            rows="6"
+                            cols="50"
+                            placeholder="Describa las condiciones en las que fue encontrado el animal..."
+                            required
+                        ></textarea>
+
+                        <p>
+                            <label for="fecha">
+                                Fecha del rescate:
+                            </label>
+
+                            <input
+                                type="date"
+                                id="fecha"
+                                name="fecha"
+                                required
+                            >
+                        </p>
+
+                        <p>
+                            <label for="ubicacion">
+                                Ubicación donde fue encontrado:
+                            </label>
+
+                            <input
+                                type="text"
+                                id="ubicacion"
+                                name="ubicacion"
+                                placeholder="Ejemplo: Centro de la ciudad"
+                            >
+                        </p>
+                    </fieldset>
+
+                    <!-- Datos de la persona que reporta -->
+                    <fieldset>
+                        <legend>Información del reportante</legend>
+
+                        <p>
+                            <label for="reportante">
+                                Nombre de la persona que reporta:
+                            </label>
+
+                            <input
+                                type="text"
+                                id="reportante"
+                                name="reportante"
+                                placeholder="Ingrese su nombre"
+                                required
+                            >
+                        </p>
+
+                        <p>
+                            <label for="contacto">
+                                Número de contacto:
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="contacto"
+                                name="contacto"
+                                placeholder="Ejemplo: 0991234567"
+                            >
+                        </p>
+                    </fieldset>
+
+                    <!-- Botones del formulario -->
+                    <p>
+                        <button type="submit">Registrar caso</button>
+                        <button type="reset">Limpiar formulario</button>
+                    </p>
+
+                </form>
+            </article>
+        </section>
+
+        <!-- Información adicional -->
+        <section>
+            <h2>Importante</h2>
+
+            <p>
+                Este formulario corresponde a un prototipo estructural.
+                Por el momento, permite visualizar y completar los campos,
+                pero todavía no almacena información en una base de datos
+                ni registra automáticamente los casos.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Contacto: contacto@refugioanimal.com</p>
+        <p>
+            &copy; 2026 Sistema de Gestión de Casos de Rescate Animal.
+        </p>
+        <p>Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
