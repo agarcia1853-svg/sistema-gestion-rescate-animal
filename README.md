@@ -28,3 +28,21 @@ Construcción del prototipo estructural mediante HTML5.
 - main: versión principal.
 - develop: integración de avances.
 - feature/maquetacion-html: desarrollo de la maquetación HTML5.
+
+## Maquetación HTML - Unidad 1
+
+Se implementó la estructura inicial del sistema utilizando HTML5 semántico.
+
+### Páginas desarrolladas
+
+- index.html: página principal del sistema.
+- reportar.html: formulario para registrar nuevos casos de rescate.
+- rescates.html: listado de casos de rescate registrados.
+
+### Recursos gráficos
+
+Las imágenes utilizadas en el proyecto se encuentran organizadas en la carpeta assets/img/.
+
+### Rama de desarrollo
+
+Los cambios correspondientes a la maquetación HTML se gestionan mediante la rama feature/maquetacion-html.
